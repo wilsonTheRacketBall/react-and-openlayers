@@ -13,3 +13,25 @@ you can use the publicly available Nominatim instance at https://nominatim.opens
 the popup showing the most likely place name can be anywhere on top of the map (e.g. simply in the middle of the screen); we'll give you bonus points though if the popup is anchored at the location where the user clicked
 keep it simple, don't overthink the file/folder structure too much, and simply use Vite or any other way to quickly set up a React App from scratch
 focus on the functionality, the UI design can be completely disregarded
+
+## UI
+
+![Screenshot 2023-06-05 at 12 23 31 PM](https://github.com/wilsonTheRacketBall/react-and-openlayers/assets/130399849/318c8bf3-24d8-4172-bccd-c9c0b5641f15)
+
+## Scripts
+
+```
+npm install
+npm run start
+```
+
+For testing
+
+```
+npm run test
+npm run e2e
+```
+
+![ezgif com-video-to-gif](https://github.com/wilsonTheRacketBall/react-and-openlayers/assets/130399849/ca9fd55f-30da-4f08-960e-2e2fc039bf7c)
+
+

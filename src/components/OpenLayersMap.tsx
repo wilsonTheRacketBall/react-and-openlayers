@@ -47,10 +47,14 @@ const OpenLayersMap: React.FC = () => {
 
         try {
           const res = await axios.get(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`);
-          popupDiv.current!.innerHTML = res.data.display_name;
-          popup.setPosition(evt.coordinate);
+          const displayName = res.data.display_name;
+          if (displayName) {
+            popupDiv.current!.innerHTML = displayName;
+            popup.setPosition(evt.coordinate);
+          } else {
+            popup.setPosition(undefined);
+          }
         } catch (error) {
-          console.log('xx')
           console.error(error);
         }
       });
